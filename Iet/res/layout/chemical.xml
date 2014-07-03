@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#8C1515"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#8C1515"
+        android:padding="10dp"
+        android:text="Chemical Engineering"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/txtHeader" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="394dp"
+            android:orientation="vertical" >
+
+            <adapter.TextViewEx
+                android:id="@+id/mission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/physical_infra"
+                android:layout_alignParentRight="true"
+               android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+                android:layout_marginTop="25dp"
+                android:text="adapter.TextViewEx" />
+
+            <adapter.TextViewEx
+                android:id="@+id/details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/mission"
+                android:layout_alignRight="@+id/mission"
+                android:layout_below="@+id/mission"
+                android:layout_marginTop="25dp"
+                android:text="adapter.TextViewEx" />
+
+            <adapter.TextViewEx
+                android:id="@+id/adapter.TextViewEx2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/department_news"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/details"
+                android:layout_marginTop="38dp"
+                 android:textColor="#336699"
+                android:text="Core curriculum : "
+                android:textStyle="bold" 
+                 android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="18dp" />
+
+            <adapter.TextViewEx
+                android:id="@+id/department_news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/details"
+                android:layout_below="@+id/adapter.TextViewEx2"
+                android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+                android:layout_marginTop="18dp"
+                android:text="adapter.TextViewEx" />
+
+            <adapter.TextViewEx
+                android:id="@+id/physical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/department_news"
+                android:layout_below="@+id/department_news"
+                android:layout_marginTop="14dp"
+                 android:paddingLeft="13dp"
+          android:paddingRight="13dp"
+                android:text="Electives : "
+                 android:textColor="#336699"
+                 android:textStyle="bold" 
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="18dp" />
+
+            <adapter.TextViewEx
+                android:id="@+id/physical_infra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/physical"
+               android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+                android:layout_marginTop="18dp"
+                android:text="adapter.TextViewEx" />
+
+            <adapter.TextViewEx
+                android:id="@+id/q2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/q1"
+                android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+                android:layout_marginTop="18dp"
+                android:text="adapter.TextViewEx" />
+
+            <adapter.TextViewEx
+                android:id="@+id/q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/physical_infra"
+                android:layout_below="@+id/physical_infra"
+                android:layout_marginTop="14dp"
+                 android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+                android:text="Laboratories :"
+                android:textStyle="bold" 
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#336699"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

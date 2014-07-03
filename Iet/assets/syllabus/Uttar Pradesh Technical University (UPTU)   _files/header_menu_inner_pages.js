@@ -1,0 +1,1 @@
+document.write('<a href="../index.htm">Home</a> | <a href="http://online.uptu.ac.in/gbtu/gbtu/feedback.aspx">Feedback</a> | <a href="http://online.uptu.ac.in/gbtu/gbtu/grievance.aspx">Grievances</a> | <a href="../sitemap.htm">Sitemap</a>');

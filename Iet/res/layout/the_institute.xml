@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+     android:background="#FFFFFF" >
+     
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#8C1515"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#8C1515"
+        android:padding="10dp"
+        android:text="The Institute"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/txtHeader" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="394dp"
+            android:orientation="vertical" >
+
+            <adapter.TextViewEx
+                android:id="@+id/institute_inst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:layout_alignParentRight="true"
+              android:paddingLeft="15dp"
+                  android:paddingRight="15dp"
+                android:layout_marginTop="25dp"
+                android:text="TextView" />
+
+            
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

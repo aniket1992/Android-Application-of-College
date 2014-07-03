@@ -1,0 +1,263 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.example.iet">
+
+    <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="17"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+<permission android:name="com.example.iet.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+<uses-permission android:name="com.example.iet.permission.C2D_MESSAGE"/>
+ 
+  <permission android:name="com.example.iet.permission.MAPS_RECEIVE" android:protectionLevel="signature"/> 
+      <uses-permission android:name="com.example.iet.permission.MAPS_RECEIVE"/> 
+      
+      <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+ 
+
+    <application android:allowBackup="false" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:hardwareAccelerated="true" android:label="@string/app_name" android:name="com.example.iet.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="IetHome"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.example.iet.Viewpdf" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="VIEWPDF"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+         <activity android:label="@string/app_name" android:name="com.example.iet.Notificator" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="openfragments"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.placement.placement_web" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="placement"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+         <activity android:name="adapter.DownloadDirectory" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="Downloads"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+                <activity android:name="adapter.DownloadPdfFile" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="download_pdf"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+         
+        <activity android:label="@string/app_name" android:name="com.example.iet.Splash" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+         <activity android:label="howtouse" android:name="introduction.HowTouse" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="HOWTOUSEIET"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+          <activity android:name="com.example.departments.ComputerScience" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="ComputerScience"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+         <activity android:name="com.example.departments.CivilEngineering" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="CivilEngineering"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+         <activity android:name="com.example.departments.ElectricalEngineering" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="ElectricalEngineering"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+         <activity android:name="com.example.departments.ElectronicsCommEngineering" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="ElectronicsCommEngineering"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+         <activity android:name="com.example.departments.MechanicalEngineering" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="MechanicalEngineering"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+         <activity android:name="com.example.departments.ChemicalEngineering" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="ChemicalEngineering"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+         <activity android:name="com.example.departments.Biotechnology" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="Biotechnology"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+         <activity android:name="com.example.departments.EnvironmentalEngineering" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="EnvironmentalEngineering"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+         <activity android:name="com.example.departments.MBA" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="MBA"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+               <activity android:name="academics.Shouryotsava" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="Shouryotsava"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="academics.StudentsSocieties" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="StudentsSocieties"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+       <activity android:name="academics.Encore" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="Encore"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name="service.IETService" android:process=":remote">
+      <intent-filter>
+        <action android:name="service.IETService"/>
+      </intent-filter>
+            
+        </service>
+         <service android:name="service.PlacementNews" android:process=":remote">
+      <intent-filter>
+        <action android:name="service.PlacementNews"/>
+      </intent-filter>
+            
+        </service>
+        <service android:name="service.NewsService" android:process=":remote">
+      <intent-filter>
+        <action android:name="service.NewsService"/>
+      </intent-filter>
+            
+        </service>
+        <receiver android:name="com.example.iet.MyReceiver">
+        <intent-filter>
+            <action android:name="com.scringo.LoginBroadcast"/>
+            <category android:name="com.example"/>
+        </intent-filter>
+    </receiver>
+         <receiver android:name="service.NetworkReceiver"> --&gt;
+            
+            <intent-filter> --&gt;
+                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/> --&gt;
+             </intent-filter> --&gt;
+        </receiver>
+       
+         
+      <receiver android:name="com.scringo.push.ScringoGCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND"> 
+<intent-filter> 
+<action android:name="com.google.android.c2dm.intent.RECEIVE"/> 
+<action android:name="com.google.android.c2dm.intent.REGISTRATION"/> 
+<category android:name="com.example.iet"/> 
+</intent-filter> 
+</receiver> 
+
+<service android:name="com.scringo.push.ScringoGCMIntentService"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyB2uALe19-d2mdmagM7xoxA1E72ShlwPD0"/>
+   <activity android:name="com.example.iet.ScringoLoginRootActivity"> </activity>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.radar.ScringoRadarActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.feed.ScringoFeedActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.profile.ScringoProfileActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.profile.ScringoFollowersActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.inbox.ScringoInboxActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.inbox.ScringoChatActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.invite.ScringoInviteActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.twitter.ScringoTwitterActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.invite.ScringoFindFriendsActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.feedback.ScringoFeedbackActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.inbox.ScringoSendToActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.profile.ScringoProfileBridge"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.profile.ScringoProfileEditBio"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.feedback.ScringoFeedbackRootActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.inbox.ScringoSystemMessageActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.invite.ScringoFindFriendsRootActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.invite.ScringoSuggestionsActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.apps.ScringoAppDiscoveryActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.chatroom.ScringoChatroomActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.chatroom.ScringoTopicActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.profile.ScringoSignUpRootActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.profile.ScringoSignUpActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.profile.ScringoLoginRootActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.profile.ScringoLoginActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.profile.ScringoSignUpSettingsActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.profile.ScringoForgotPasswordActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.profile.ScringoChangePasswordActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.quiz.ScringoQuizzesActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.quiz.ScringoQuizActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.quiz.ScringoQuizIntroActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.quiz.ScringoQuizStoreActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.menu.ScringoMenuActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.profile.ScringoMyProfileActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.scores.ScringoScoresActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.quiz.ScringoSuggestQuestionActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.keyboard.ScringoStickerStoreActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.keyboard.ScringoStickerPackActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.keyboard.ScringoPhotoActivity"/>
+		<activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.ScringoWebViewActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.facebook.LoginActivity"/>
+        
+        <service android:name="com.scringo.service.ScringoService"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/replace_this_facebook_app_id"/>
+        </application>
+
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+</manifest>

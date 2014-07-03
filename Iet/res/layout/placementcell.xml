@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+      <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#8C1515"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#8C1515"
+        android:padding="10dp"
+        android:text="Placement Cell"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/events"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="132dp"
+        android:background="#000000"
+        android:src="@drawable/ic_events" />
+
+    <ImageButton
+        android:id="@+id/news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/events"
+        android:layout_marginLeft="38dp"
+        android:background="#000000"
+        android:src="@drawable/ic_news" />
+
+    <ImageButton
+        android:id="@+id/student_tpo_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/news"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="46dp"
+        android:background="#000000"
+        android:src="@drawable/student_tpo_login" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/news"
+        android:layout_centerVertical="true"
+        android:text="  News"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/events"
+        android:layout_centerVertical="true"
+        android:text=" Events"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/student_tpo_login"
+        android:layout_below="@+id/student_tpo_login"
+        android:text="Login And Registration"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#8C1515"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#8C1515"
+        android:padding="10dp"
+        android:text="Resources"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/txtHeader" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="394dp"
+            android:orientation="vertical" >
+     <adapter.TextViewEx
+        android:id="@+id/institute_resources1"
+        
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+       
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:layout_marginTop="47dp"
+      
+       android:layout_gravity="fill_horizontal"
+android:layout_alignParentTop="true"
+android:layout_width="match_parent"
+  
+        android:text="TextView" />
+
+ <adapter.TextViewEx
+     android:id="@+id/adapter.TextViewEx2"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/institute_resources1"
+     
+     android:paddingLeft="13dp"
+     android:paddingRight="13dp"
+     android:text="Library : "
+     android:textAppearance="?android:attr/textAppearanceMedium"
+     android:textColor="#336699"
+     android:textSize="18dp"
+     android:textStyle="bold" />
+ 
+   <adapter.TextViewEx
+        android:id="@+id/resources3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adapter.TextViewEx2"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="14dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:text="TextView" />
+   <adapter.TextViewEx
+     android:id="@+id/adapter.resource4"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/resources3"
+     
+     android:paddingLeft="13dp"
+     android:paddingRight="13dp"
+     android:text="Computer Centre : "
+     android:textAppearance="?android:attr/textAppearanceMedium"
+     android:textColor="#336699"
+      android:textSize="18dp"
+     android:textStyle="bold" ></adapter.TextViewEx>
+   <ImageView
+         android:id="@+id/imageView2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+        
+         android:layout_below="@+id/adapter.resource4"
+         android:layout_marginTop="20dp"
+           android:layout_centerHorizontal="true"
+        android:paddingRight="13dp"
+         android:src="@drawable/computer_lab" />
+   <adapter.TextViewEx
+          android:id="@+id/resources5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adapter.resource4"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="14dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:text="TextView" />
+   <adapter.TextViewEx
+        android:id="@+id/resources6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adapter.resource7"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/adapter.resource7"
+        android:layout_marginTop="14dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:text="TextView" />
+   <adapter.TextViewEx
+     android:id="@+id/adapter.resource7"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/resources5"
+     
+     android:paddingLeft="13dp"
+     android:paddingRight="13dp"
+     android:text="Hostel : "
+     android:textAppearance="?android:attr/textAppearanceMedium"
+     android:textColor="#336699"
+      android:textSize="18dp"
+     android:textStyle="bold" ></adapter.TextViewEx>
+   <adapter.TextViewEx
+     android:id="@+id/adapter.resource8"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/resources6"
+     
+     android:paddingLeft="13dp"
+     android:paddingRight="13dp"
+     android:text="Gymnasium : "
+     android:textAppearance="?android:attr/textAppearanceMedium"
+     android:textColor="#336699"
+      android:textSize="18dp"
+     android:textStyle="bold" ></adapter.TextViewEx>
+   
+    <adapter.TextViewEx
+        android:id="@+id/resources9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adapter.resource8"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/adapter.resource8"
+        android:layout_marginTop="14dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:text="TextView" />
+     <adapter.TextViewEx
+     android:id="@+id/adapter.resource9"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/resources9"
+     
+     android:paddingLeft="13dp"
+     android:paddingRight="13dp"
+     android:text="Medical Facilities :"
+     android:textAppearance="?android:attr/textAppearanceMedium"
+     android:textColor="#336699"
+      android:textSize="18dp"
+     android:textStyle="bold" ></adapter.TextViewEx>
+   
+    <adapter.TextViewEx
+        android:id="@+id/resources10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adapter.resource9"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/adapter.resource9"
+        android:layout_marginTop="14dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:text="TextView" />
+     <adapter.TextViewEx
+     android:id="@+id/adapter.resource10"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/resources10"
+     
+     android:paddingLeft="13dp"
+     android:paddingRight="13dp"
+     android:text="Security :"
+     android:textAppearance="?android:attr/textAppearanceMedium"
+     android:textColor="#336699"
+      android:textSize="18dp"
+     android:textStyle="bold" ></adapter.TextViewEx>
+   
+    <adapter.TextViewEx
+        android:id="@+id/resources11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adapter.resource10"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/adapter.resource10"
+        android:layout_marginTop="14dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:text="TextView" />
+    <adapter.TextViewEx
+     android:id="@+id/adapter.resource11"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/resources11"
+     
+     android:paddingLeft="13dp"
+     android:paddingRight="13dp"
+     android:text="Bank :"
+     android:textAppearance="?android:attr/textAppearanceMedium"
+     android:textColor="#336699"
+      android:textSize="18dp"
+     android:textStyle="bold" ></adapter.TextViewEx>
+   
+    <adapter.TextViewEx
+        android:id="@+id/resources12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adapter.resource11"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/adapter.resource11"
+        android:layout_marginTop="14dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:layout_below="@+id/adapter.TextViewEx2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:src="@drawable/library" />
+
+</RelativeLayout>
+    </ScrollView>
+ 
+</RelativeLayout>

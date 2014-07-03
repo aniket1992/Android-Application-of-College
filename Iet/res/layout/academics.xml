@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+     android:background="#FFFFFF" >
+      <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#8C1515"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#8C1515"
+        android:padding="10dp"
+        android:text="Academics"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/syllabus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+          android:layout_marginTop="54dp"
+        android:background="#FFFFFF"
+        android:src="@drawable/ic_departments" />
+
+    <ImageButton
+        android:id="@+id/curricular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/syllabus"
+        android:layout_below="@+id/syllabus"
+        android:layout_marginTop="54dp"
+        android:background="#FFFFFF"
+        android:src="@drawable/ic_syllabus" />
+
+    <ImageButton
+        android:id="@+id/departments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/syllabus"
+        android:layout_below="@+id/txtHeader"
+        android:layout_marginTop="54dp"
+        android:background="#FFFFFF"
+        android:src="@drawable/ic_co" />
+
+</RelativeLayout>

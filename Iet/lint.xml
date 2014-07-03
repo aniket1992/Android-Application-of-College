@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="NewApi" severity="ignore">
+        <ignore path="src/com/example/iet/MainActivity.java" />
+    </issue>
+    <issue id="ShowToast">
+        <ignore path="src/database/IetDatabase.java" />
+    </issue>
+    <issue id="ValidFragment" severity="ignore">
+        <ignore path="src/com/example/iet/FindPeopleFragment.java" />
+    </issue>
+</lint>

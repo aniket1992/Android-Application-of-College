@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+ <item android:id="@+id/action_back"
+          android:icon="@drawable/action_back"
+          android:title="BACK"
+          android:showAsAction="ifRoom"/>
+     
+    <!-- Location Found -->
+     
+    <!-- Help -->
+    <item android:id="@+id/action_settings"
+        android:icon="@drawable/settings"
+         android:title="Settings"
+        android:showAsAction="never"/>
+     <item android:id="@+id/downloads"
+       android:icon="@drawable/ic_downloads"
+         android:title="Downloads"
+        android:showAsAction="never"/>
+    
+</menu>

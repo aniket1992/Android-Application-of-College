@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IET</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="logo">Institute Of Engineering And Technology</string>
+    <string name="download_ticker">dsf</string>
+    <string name ="content_title">aaa</string>
+    <string name ="tab_words">aaa</string>
+    <string name ="tab_numbers">aaaf</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Institute</item>
+        <item>News And Updates</item>
+        <item>Academics</item>
+        <item>Placement Cell</item>
+        <item>Resources</item>
+        <item>Results</item>
+        <item>FAQ</item>
+        <item>Contact Us</item>
+        
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_photos</item>
+        <item>@drawable/ic_communities</item>
+        <item>@drawable/ic_pages</item>
+        <item>@drawable/ic_whats_hots</item>
+        <item>@drawable/ic_results1</item>
+        <item>@drawable/ic_faq1</item>
+        <item>@drawable/ic_whats_hot</item>
+         <item>@drawable/ic_whats_hot</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_ll">Ll</string>
+    
+    
+    
+    <string name="pref_send_report">Send crash reports</string>
+    <string name="pref_send_report_summary">Helps to fix bugs</string>
+    <string name="pref_sync_frequency">Sync frequency</string>
+    <string name="pref_sync_frequency_summary">Set the sync frequency</string>
+    <string name="pref_user_name">Set username</string>
+    <string name="pref_user_name_summary">Set your username</string>
+     
+    <string name="pref_user_profile">User Profile</string>
+    <string name="pref_update_setting">Update Settings</string>
+
+</resources>

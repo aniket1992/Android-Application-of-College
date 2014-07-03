@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+     android:background="#FFFFFF" >
+
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#8C1515"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#8C1515"
+        android:padding="10dp"
+        android:text="Contact Us"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/txtHeader" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="394dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="60dp"
+                android:textStyle="bold" 
+                android:text="INSTITUTE OF ENGINEERING AND TECHNOLOGY"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#336699" 
+             
+                />
+
+            <TextView
+                android:id="@+id/mission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView1"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="25dp"
+                android:text="Sitapur Road,Lucknow" />
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/mission"
+                android:layout_alignRight="@+id/mission"
+                android:layout_below="@+id/mission"
+                android:layout_marginTop="25dp"
+                android:text="Uttar Pradesh,India" />
+
+            <TextView
+                android:id="@+id/physical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="14dp"
+                android:text="Fax No :"
+                android:textStyle="bold" 
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#336699"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/details"
+                android:layout_below="@+id/details"
+                android:layout_marginTop="50dp"
+                android:text="Telephone No :"
+                android:textStyle="bold" 
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#336699"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/physical1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/physical"
+                android:layout_below="@+id/physical"
+                android:layout_marginTop="18dp"
+                android:text="Pincode :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#336699"
+                android:textStyle="bold" 
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/physical"
+                android:layout_alignRight="@+id/details"
+                android:text="+91-522-2361692" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/physical1"
+                android:layout_alignLeft="@+id/textView3"
+                android:text="+91-522-2361631" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/physical1"
+                android:layout_alignBottom="@+id/physical1"
+                android:layout_alignRight="@+id/textView4"
+                android:text=" 226021" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

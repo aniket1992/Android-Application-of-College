@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#8C1515"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#8C1515"
+        android:padding="10dp"
+        android:text="Home"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <ListView
+        android:id="@+id/homelist"
+        android:layout_width="match_parent"
+        android:layout_height="332dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/home_splash"
+        android:layout_y="128dp" >
+    </ListView>
+ <TextView
+        android:id="@+id/textView90"
+        android:layout_below="@+id/home_splash"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="30dp"
+         android:layout_centerHorizontal="true"
+         android:text="Currently there is no latest news available."
+         android:visibility="gone"
+         android:gravity="center"
+        />
+    <ImageView
+        android:id="@+id/home_splash"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtHeader"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY" />
+
+</RelativeLayout>

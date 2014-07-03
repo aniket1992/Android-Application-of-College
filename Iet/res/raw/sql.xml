@@ -1,0 +1,39 @@
+<sql>
+<statement>
+CREATE TABLE IF NOT EXISTS institute_inst(theinstitute varchar(1000000))
+</statement>
+<statement>
+CREATE TABLE IF NOT EXISTS institute_vision(vision varchar(1000000))
+</statement>
+<statement>
+CREATE TABLE IF NOT EXISTS institute_aboutus(aboutus varchar(1000000))
+</statement>
+<statement>
+CREATE TABLE IF NOT EXISTS institute_administration(administration varchar(1000000))
+</statement>
+<statement>
+CREATE TABLE IF NOT EXISTS result(resultname varchar(1000000),url varchar(500))
+</statement>
+<statement>
+CREATE TABLE IF NOT EXISTS results_new(newnews varchar(500))
+</statement>
+<statement>
+CREATE TABLE IF NOT EXISTS news_updates(news varchar(1000000),url varchar(500),newnews varchar(500))
+</statement>
+<statement>
+CREATE TABLE IF NOT EXISTS news_updates_new(newnews varchar(500))
+</statement>
+<statement>
+CREATE TABLE IF NOT EXISTS placement_news(heading varchar(500),news varchar(1000000))
+</statement>
+<statement>
+CREATE TABLE IF NOT EXISTS placement_new(newnews varchar(1000000))
+</statement>
+<statement>
+CREATE TABLE IF NOT EXISTS placement_events(heading varchar(500),events varchar(1000000))
+</statement>
+<statement>
+CREATE TABLE IF NOT EXISTS syllabus(Syllabus varchar(100000),url varchar(500))
+</statement>
+
+</sql>

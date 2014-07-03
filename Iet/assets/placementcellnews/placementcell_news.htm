@@ -1,0 +1,620 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+
+<title>Placement Cell :Institute of Engineering & Technology</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="language" content="english">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<link href="css/home_default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="./javascript/load_events.js"></script>
+
+
+
+<!--[if lt IE 7]>
+	<script defer type="text/javascript" src="/script/pngfix.js"></script>
+<![endif]-->
+
+<script type="text/javascript" >
+// code for xml loading ....	
+	
+	
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.open("GET","./xml/registration.xml",false);
+xmlhttp.send();
+xmlDoc=xmlhttp.responseXML;
+
+var start_date = xmlDoc.getElementsByTagName("start_date")[0].childNodes[0].nodeValue;
+var end_date = xmlDoc.getElementsByTagName("end_date")[0].childNodes[0].nodeValue; 
+
+// finding current date and setting into Date2
+
+var currentTime = new Date();
+var month = currentTime.getMonth() + 1;
+var day = currentTime.getDate();
+var year = currentTime.getFullYear();
+
+
+
+var Date1 = new Date(start_date);
+var Date2 = new Date(month + "/" + day + "/" + year);
+var Date3 = new Date(end_date);
+
+function load_register_link()
+{
+
+if (Date2 >= Date1 && Date2 <= Date3)
+ {
+     document.getElementById("register_link").innerHTML = "&nbsp;|&nbsp;<a href='./profile_form2.asp' ><b>Register</b></a>"
+ }
+ 
+}
+</script>
+
+</head>
+
+<body onLoad="load_register_link()">
+<div id="skip"> <a href="#page_content">Skip to Main Content</a> | <a href="#navigation">Skip to Navigation</a> | <a href="#footer">Skip to Page Bottom</a> 
+</div>
+
+<div id="header">
+	<div class="inner">
+    
+	  <div id="topnav"> <a href="http://Webmail.Brinkster.com" target="_blank">WebMail</a> | <a href="./events/">News</a> | <a href="#">Media</a> | <a href="./contact.asp">Contacts</a> | <a href="#">Site Map</a> </div>
+		<div id="search_form">
+		
+			
+			<form method="get" name="f" action="http://www.google.com/search" style="display: inline;">
+			<div> <span><a href="#">Advanced</a></span>
+        	<input TYPE=text class="input" name=q size=25  maxlength=255 value="" id="q" style="color: rgb(102, 102, 102);">
+			
+        <input type="hidden" onClick="layer = document.f.elements[0];layer.name=(layer.name=='as_epq'?'q':'as_epq')" name=btnG VALUE="Search">
+		</div>
+    </form>
+	
+		</div>
+  </div>
+</div>
+
+
+<div id="peoplenav">
+	<div class="sub">
+		<div class="inner"> <img id="logo" class="pngfix" alt="Institute Of Engineering & Technology" src="images/ietlogo.jpg"> 
+        <div id="logolink1" >Institute of Engineering & Technology</div>
+         <div id="logolink2" >PLACEMENT CELL</div>
+		  <a name="navigation"></a>
+<ul>
+				<li><a href="./default.asp">Home</a></li>
+				<li><a href="http://ietlucknow.edu/" target="_blank">College</a></li>
+				<li><a href="http://ietalumni.org" target="_blank">Alumni</a></li>
+				<li><a href="./placement_statistics.asp">Placement Statistics</a></li>
+				<li><a href="./contact.asp">Contacts</a></li>
+			</ul>
+			<div class="clearer"></div>
+		</div>
+  </div>
+</div>
+
+
+
+ <div id="login_bar">
+ 
+ <!-- checking which use is online and creatinf link to his/her home page -->
+ 
+ 
+ 
+  Welcome <h12>
+ Guest
+</h12>!&nbsp;<a href="./login.asp" ><b>Login</b></a><span id="register_link"></span>
+
+</div>
+
+
+<div id="middle">
+
+  <div id="banner">
+	<div id="banner_content">
+		<div class="content">
+        
+						<div class="inner" style="width: 4700px; overflow: hidden;">
+	
+                     <div class="item">
+                                
+                     <div class="text2">
+					 <!--
+                   <div class="photo">
+        		  <img  src="images/dsy4.jpg" alt="DS Yadav">
+                  <p>
+                 <strong> Dr. Divakar Singh Yadav</strong><br/>
+B.Tech (Pantnagar), M.Tech (IIT Kharagpur)<br />
+Ph.D. (Southampton)<br />
+Incharge, Training & Placement Cell
+</p>
+                  </div>   -->    
+				  <!--photo ends -->
+                  <h2>Invitation</h2>
+                  <p>
+                 
+                 It gives me immense pleasure to invite you in the
+Campus Recruitment Program 2013 of IET Lucknow to
+recruit its final year students for placement in your
+esteemed organization. This website describes
+the academic programs offered at IET Lucknow
+and about the campus life at IET which highlights the
+excellence in academics apart from various extra and
+co-curricular activities designed for total personality
+development of the students. We co-ordinate your
+visit to our campus and provide all possible assistance
+required in the process of recruitment. The
+candidates for recruitment-2013 consist of the B.
+Tech., M. Tech., MBA and MCA students who will be
+passing out in the summer of 2013.
+We look forward to hearing from you and establishing
+a long term relationship with your esteemed
+organization.              
+              
+             </p>
+             
+           <!--  
+            <p>Companies/Recruiters who wish to conduct placement at the Institute
+          may fill up the <a href="./jaf.asp">Job
+          Announcement Form</a> to fill up their exact requirements.
+          <p>
+          -->
+         <p>
+            Companies/Recruiters, go to <a href="placement_statistics.asp"><strong>Placement Statistics</strong></a> section to see our Placement progress so far and the statistics of placed and unplaced students with their profiles...
+			
+			
+</p>    
+          <p>Download 
+            <a href="IET_Lucknow_Placement_Brochure_2012-2013.pdf"><strong>The Institute's Brochure</strong></a> containg the entire statistics and information.            
+           </p>
+          
+		   <!--
+           <p>Download <a href="Annual Progress Report, 2008-2009.pdf"><strong>Annual Progress Report, 2008-2009</strong></a> <strong><span style="font-size: 12pt; font-family: Arial"> </span></strong>           
+           </p>
+        
+          -->
+         
+           
+            </div>      
+        
+         </div>
+        
+       </div><!-- inner ends -->
+	  		</div>
+            
+	</div>
+</div>
+<div class="clearer"></div>
+<!-- banner ends  -->
+
+
+
+	
+    
+		<div id="news">
+            
+			<div id="iet_news">
+            
+				<div id="iet_news_bar" class="bar">
+                
+					<div id="current_date">
+                    <FORM name="clock">
+					<!--<input type="text" name="face" size=13 value="">-->
+					</FORM>
+					</div>
+                    
+					<h3 class="collapse"><a href="./news/">News</a></h3>
+				</div> <!-- new bar ends -->
+                
+                <marquee direction="up" behavior="scroll" onmouseover="stop()" onmouseout="start()" scrollamount="3">
+                
+				<div id="iet_news_data">	
+                
+                	
+                						
+						<div class="item">
+							<a href="#"><!--<img src="sthumb.jpg" alt="Recruitment" title="Recruitment">--></a>
+						<h4><a class="link" href="#">TCS Registration Last Date</a></h4>
+<p>Registration on "nextstep.tcs" is deadline for 26th September 2013. Students appearing for TCS must complete the registration form and must go through "Apply For drive" till the deadline date, otherwise they will not be allowed to sit in TCS campus recruitment program. . . <!--<span class="more">[<a class="more" href="#">read more</a>]</span>--></p>
+				<div class="clearer"></div>
+						</div>
+                        
+            
+											
+                                 <div class="item alt">
+									<a href="#"><!--<img src="sthumb.jpg" alt="Personality" title="Personality">--></a>
+													<h4><a class="link" href="#">IET Placement Cell Registration and Verification Final Call </a></h4>
+							<p>All final year students are informed to register (if anyone has not done) by Wednesday i.e 28th August's midnight.Document Verification deadline is 31st August and 1st Sept, 2013. Contact your branch TPRs for any information/clarification. . . . <!--<span class="more">[<a class="more" href="#">read more</a>]</span>	-->						</p>
+							<div class="clearer"></div>
+						</div>
+                        
+                			
+                             	
+                						
+						<div class="item">
+							<a href="#"><!--<img src="sthumb.jpg" alt="Recruitment" title="Recruitment">--></a>
+						<h4><a class="link" href="#">I.E.T Placement Cell Registration</a></h4>
+<p>Registration is open for final year ad pre final year. All students from FY14 & FY15 batch are requested to please contact their branch TPRs from final year for information/clarification regarding passwords and updation of student profile.Apparently everybody is required to complete their registration by 21st August, 2013. . . <!--<span class="more">[<a class="more" href="#">read more</a>]</span>--></p>
+				<div class="clearer"></div>
+						</div>
+                        
+            
+                            
+                            
+					</div><!-- iet news text ends -->
+                    
+                    </marquee>
+                    
+                    		<div class="links">
+						
+						<a href="./events/"><img src="images/arrow.gif" alt="More News"> More News</a>						
+						<div class="clearer"></div>
+                        </div>
+                
+                
+                </div>
+			<!-- ietnew ends -->
+			
+			
+			<div id="great_events">
+				<div id="great_events_bar" class="bar">	
+					<h3><a href="#">Events</a></h3>
+				</div>
+                
+                
+                  <marquee direction="up" behavior="scroll"  onmouseover="stop()" onmouseout="start()" scrollamount="3" >
+                  
+				<div id="great_events_data" >
+                
+                
+                
+                <div class="events_item">
+						
+                  <div class="date_venue">
+                         
+                         <div class="date"> 28-9-2013</div>
+                          
+   		                 <div class="time">3:00 PM</div>
+                         
+                         <div class="location"> LT-11 </div>
+                        
+                        
+                   </div>
+                        <h4><a class="link" href="#">Career Launcher(CL) conducting "Campus Placement Program"</a></h4>
+						<p>Career launcher(CL) is conducting a 2 hours workshop on "Aptitude and Verbal ability" which would help the final year students of final year to improve their written test skills. ...</p>
+						<div class="clearer"></div>
+               </div>
+
+             
+
+<div class="events_item alt">
+						
+          <div class="date_venue">
+                         
+                <div class="date"> 7-6-2013</div>
+                          
+   		        <div class="time">1:00 PM</div>
+                         
+                <div class="location"> LT-11 </div>
+                        
+                        
+          </div>
+						
+                        <h4><a class="link" href="#">TCS conducting Survey on "IT investment and Career Choices"</a></h4>
+						<p>As part of TCS internal Study at TCS lucknow regarding IT investments and career choices of students in Uttar Pradesh, TCS would like to get a survey
+filled up by the students of B.Tech final year of IET Lucknow. Filling the questionnaire won't take more than 10 minutes.
+...</p>
+						<div class="clearer"></div>
+ </div>
+
+
+
+
+                          
+                
+                <div class="events_item">
+						
+                  <div class="date_venue">
+                         
+                         <div class="date"> 8-8-2013</div>
+                          
+   		                 <div class="time">10:30 AM</div>
+                         
+                         <div class="location"> LT-11 </div>
+                        
+                        
+                   </div>
+                        <h4><a class="link" href="#">TCS conducting workshop on Guidelines to Programming in Industry</a></h4>
+						<p>TCS is conducting a workshop on "Guidelines to Programming in Industry" in our campus.Pre-final/Final Year Students of B.Tech (CS/IT/EC)/MCA, who have basic knowledge of Programming are invited to attend the workshop and improve your programming skills....</p>
+						<div class="clearer"></div>
+               </div>
+
+             
+
+<div class="events_item alt">
+						
+          <div class="date_venue">
+                         
+                <div class="date"> 16-6-2013</div>
+                          
+   		        <div class="time">10:00 AM</div>
+                         
+                <div class="location"> LT-21 </div>
+                        
+                        
+          </div>
+						
+                        <h4><a class="link" href="#">Alumni Meet</a></h4>
+						<p>Alumni meet is going to be held in our campus for understanding and suggesting solutions to improve the quality of education, infrastructure and Training and placement of our college.Alumni from first batch are also coming. Students from every year and all branches are requested to show there enthusiastic participation....</p>
+						<div class="clearer"></div>
+ </div>
+
+
+
+
+                          
+                
+                <div class="events_item">
+						
+                  <div class="date_venue">
+                         
+                         <div class="date"> 18-9-2013</div>
+                          
+   		                 <div class="time">10:30</div>
+                         
+                         <div class="location"> LT-11 </div>
+                        
+                        
+                   </div>
+                        <h4><a class="link" href="#">Soft Skills Workshop By TCS </a></h4>
+						<p>TCS is conducting a workshop on the topic "Bridging the Gap between corporate/company and campus". Final year students are requested to attend the workshop as it could prove really beneficial in improving your interview skills....</p>
+						<div class="clearer"></div>
+               </div>
+
+             
+
+<div class="events_item alt">
+						
+          <div class="date_venue">
+                         
+                <div class="date"> 29-8-2013</div>
+                          
+   		        <div class="time">3:00 PM </div>
+                         
+                <div class="location"> LT-11 </div>
+                        
+                        
+          </div>
+						
+                        <h4><a class="link" href="#">Career Launcher(CL)workshop</a></h4>
+						<p>All 3rd year and final year studenets are invited to attend the workshop by CL.This workshop is solely centered for improving aptitude, GD & PI skills of the students for campus drives.Try to avail the opportunity. ...</p>
+						<div class="clearer"></div>
+ </div>
+
+
+
+
+                          
+                
+                <div class="events_item">
+						
+                  <div class="date_venue">
+                         
+                         <div class="date"> 8-8-2013</div>
+                          
+   		                 <div class="time">10:30 AM</div>
+                         
+                         <div class="location"> LT-11 </div>
+                        
+                        
+                   </div>
+                        <h4><a class="link" href="#">TCS Workshop on Guidelines to Programming in Industry </a></h4>
+						<p>TCS is going to conduct a workshop on Guidelines to Programming in Industry for C.S , I.T , E.C and MCA students in our campus on 8th August,2013 in LT-11 from 10:30 AM  to 12: 30 PM. 
+It will be a 1 hour workshop followed by 1 hour quiz session.
+
+Attendance is mandatory for concerned students....</p>
+						<div class="clearer"></div>
+               </div>
+
+             
+
+<div class="events_item alt">
+						
+          <div class="date_venue">
+                         
+                <div class="date"> 7-8-2013</div>
+                          
+   		        <div class="time">10:00 AM</div>
+                         
+                <div class="location"> Computer Centre & Digital Lab </div>
+                        
+                        
+          </div>
+						
+                        <h4><a class="link" href="#">Campus Commune & IET Placement Cell Registration</a></h4>
+						<p>The registration for campus commune and IET Placement Cell is going to be held on 7th August in 2 phases for 3rd year and final year students :- [
+
+10:00 AM to 12:30 PM - final year registration
+2:00 PM to 4:30 PM - pre-final year registration
+]
+
+(Note:-
+1. Students who don't register shall not be considered for training and placement activities.
+2. Students must bring photocopy of semester wise mark sheets and 10th and 12th mark sheets along with them for verification.)...</p>
+						<div class="clearer"></div>
+ </div>
+
+
+
+
+                          
+                
+                
+                
+              
+              	</div><!-- great event data end -->
+                
+                </marquee>
+                
+                <div class="links">
+						
+                        	<a href="./events/"><img src="images/arrow.gif" alt="More News"> More Events</a>
+                       
+						<div class="clearer"></div>
+					</div>
+                
+                
+			</div>
+			<!-- great event  end -->
+            
+            
+		</div><!-- news  end-->
+        
+        
+		
+                                
+    <div class="clearer"></div>
+    
+</div><!-- middle ends -->
+
+
+<div id="mainnavmain">
+  <div id="mainnav">
+	<div class="item">
+		<h2>Links </h2>
+		<ul>
+			
+			
+			
+			<li><a href="brochure.pdf">Institute's Brochure</a></li>
+		<!--	<li><a href="#">Job Announcement Form</a></li> -->
+			<li><a href="./schedule.asp">Our Recuiters</a></li>
+           <li><a href="./contact.asp">Contact Person</a></li>
+          
+		</ul>
+	</div>
+    
+      
+   
+	<div class="item">
+		<h2>Academics</h2>
+		<ul>
+			
+			<li><a href="http://ietlucknow.edu/about_us.htm" target="_blank">About College</a></li>
+			<li><a href="http://ietlucknow.edu/departments.htm" target="_blank">Departments</a></li>
+			<li><a href="http://ietlucknow.edu/faculty.htm" target="_blank">Faculty</a></li>
+			<li><a href="http://ietlucknow.edu/holiday.htm" target="_blank">Calendar</a></li>
+			
+			
+			
+			
+		</ul>
+	</div>
+    
+  
+	<div class="item">
+		<h2>Student Life</h2>
+		<ul>
+			
+			<li><a href="http://ietlucknow.edu/encore.htm" target="_blank">Arts and Entertainment</a></li>
+			
+			<li><a href="http://ietlucknow.edu/shouryotsava.htm" target="_blank">Athletics</a></li>
+			<li><a href="http://ietlucknow.edu/resources.htm" target="_blank">Residence Life/Housing</a></li>
+			<li><a href="http://www.the-news-today.com/wake-forest-swine-flu/" target="_blank">H1N1 Flu Information</a></li>
+			
+		</ul>
+	</div>
+	<div class="item">
+		<h2>About Us</h2>
+		<ul>
+			
+			<li><a href="http://ietlucknow.edu/history.htm" target="_blank">Campus Profile</a></li>
+			<li><a href="./campus_map.asp" target="_blank">Campus Map</a></li>
+			<li><a href="http://www.facebook.com/group.php?gid=106808598258" target="_blank">Social Networking</a></li>
+			
+		</ul>
+	</div>
+	<div class="item">
+		<h2>Societies of Departments</h2>
+		<ul>
+			<li><a href="http://www.ietseed.com" target="_blank">SEED (Electronics Engineering Department)</a></li>
+			<li><a href="http://www.kriti.co.nr" target="_blank">KRITI (Computer Engineering Department) </a></li>
+            
+            <!--
+			<li><a href="http://ietfiti.encore09.com">FITI (Information Technology) </a></li>
+			<li><a href="#">Mechanical Department Society </a></li>
+			
+			<li><a href="#">Civil Department Society </a></li>
+			<li><a href="#">CHESS (Chemical Department Society) </a></li>
+			<li><a href="#">Electrical Department Society </a></li>
+            -->
+		</ul>
+	</div>
+    
+  
+
+	<div class="clearer"></div>
+</div>
+</div>
+
+
+<div id="bottomnav">
+	<div class="inner">
+		<div class="left">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="http://www.ietlucknow.edu" target="_blank">College</a></li>
+				<li><a href="http://www.ietalumni.org" target="_blank">Alumni</a></li>
+				<li><a href="./schedule.asp">Placement Statistics</a></li>
+				<li><a href="./login.asp">Student Profile</a></li>
+			</ul>
+			<ul>
+				<li><a href="./contact.asp">Contact Us</a></li>
+				
+				
+			
+			</ul>
+			<div id="eos">Institute of Engineerring & Technology is an equal opportunity educational institution/equal opportunity employer</div>
+		</div>
+		<div class="right">
+			<div id="department_address">
+				<h4><a href="http://ietplacementcell.net/">Institute of Engineerring & Technology</a></h4>
+				<p>UP Technical University<br>
+					Sitapur Road<br>
+					Lucknow-226021</p>
+				<p>This page is maintained by <a href="mailto:arvind@ietplacementcell.net">Arvind Kumar Sahu CSE(2006-2010)</a></p>
+			</div>
+		</div>
+		<div class="clearer"></div>
+	</div>
+</div>
+<!--
+<div id="bottomnav_color"></div>
+
+<script type="text/javascript">
+document.write(unescape("%3Cscript src='script/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="script/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+if(document.location.hostname == "ietlucknow.edu") {
+	try {
+	var pageTracker = _gat._getTracker("UA-5666170-4");
+	pageTracker._trackPageview();
+	} catch(err) {}
+}
+</script>
+
+-->
+
+</body>
+</html>
